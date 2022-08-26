@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import React from "react";
-import { Link, Navigate, NavLink } from "react-router-dom";
+import { Link, Navigate, NavLink, useNavigate } from "react-router-dom";
 import styles from "../css/navbar.module.css";
 import { useState } from "react";
 import { Getdata } from "../components/SearchData";
@@ -20,9 +20,13 @@ export function Inputdata(input) {
 }
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   function handleKye(e) {
     if (e.key === "Enter") {
       Inputdata(e.target.value)
+      navigate("/search");
     }
   }
 

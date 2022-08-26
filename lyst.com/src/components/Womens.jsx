@@ -13,11 +13,18 @@ import "../css/mens.css";
 import Bottom from "../Navbar/Bottom";
 import womendata from "../js/db2.json";
 import { useState } from "react";
-import { DescModal } from "./Modal";
+import { DescModal, ModalComponent } from "./Modal";
 
 const Womens = () => {
   const [data1, setData1] = useState(womendata.womensData);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedBox, setSelectedBox] = useState({});
+
+  const handleClick = (item) => {
+    setIsModalVisible(true);
+    setSelectedBox(item);
+  };
+
 
   return (
     <div>
@@ -129,9 +136,16 @@ const Womens = () => {
                 {el.title}
               </Text>
               <Text>Rs.{el.price}</Text>
+              <Button colorScheme='teal' size='xs' onClick={() => handleClick(el)}>View Details</Button>
             </Box>
           ))}
         </SimpleGrid>
+        <ModalComponent
+          data={selectedBox}
+          isOpen={isModalVisible}
+          setIsOpen={setIsModalVisible}
+        />
+        <Bottom />
         {/*----------------- Bottom-------------- */}
         <Bottom />
       </div>

@@ -126,16 +126,16 @@ const Mens = () => {
               height=""
               fontWeight={470}
               _hover={{
-                width:"102%",
-                cursor:"pointer"
-                
-              }
-              }
+                width: "102%",
+                cursor: "pointer",
+              }}
             >
               <Image w={"100%"} src={el.image} alt={el.title} />
-              <Text width={"90%"} m={"auto"} mt={5}>{el.title}</Text>
+              <Text width={"90%"} m={"auto"} mt={5}>
+                {el.title}
+              </Text>
               <Text>Rs.{el.price}</Text>
-              <Button onClick={()=> handleClick(el)}>View More</Button>
+              <Button colorScheme='teal' size='xs' onClick={() => handleClick(el)}>View Details</Button>
             </Box>
           ))}
         </SimpleGrid>
