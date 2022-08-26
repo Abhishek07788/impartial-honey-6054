@@ -271,3 +271,13 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.navbar{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+.home{
+  margin-top: 140px;
+}

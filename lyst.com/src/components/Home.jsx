@@ -23,12 +23,12 @@ const Home = () => {
   const [data6, setData6] = useState(HomeData.mens);
 
   return (
-    <div>
+    <div className="home">
       <Image
         m="auto"
         boxSize="100%"
+        h={["500px"]}
         borderBottom="1px solid black"
-        h="500px"
         src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg"
         alt="Dan Abramov"
       />
@@ -371,8 +371,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/*----------------- Bottom-------------- */}
-      <Bottom />
+        {/*----------------- Bottom-------------- */}
+        <Bottom />
     </div>
   );
 };

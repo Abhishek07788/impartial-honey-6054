@@ -1,5 +1,6 @@
 import './App.css';
 import './css/Styles.css'
+import Bottom from './Navbar/Bottom';
 import Navbar from './Navbar/Navbar';
 import Allroutes from './router/Allroutes';
 
