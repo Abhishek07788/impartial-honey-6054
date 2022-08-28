@@ -1,0 +1,35 @@
+.sidebar {
+  height: 80%;
+  width: 23%;
+  position: fixed;
+  top: 0;
+  margin-top: 140px;
+  background-color: white;
+  float: left;
+}
+.sidebar > div {
+  overflow: scroll;
+  height: 100%;
+  margin-top:20px;
+}
+.right {
+  /* border: 1px solid blue; */
+  width: 77%;
+  height: 400px;
+  margin-top: -9px;
+  float: right;
+}
+.container {
+  display: flex;
+}
+.container > div:nth-child(1) {
+  width: 25%;
+  position: fixed;
+  top: 70px;
+  background-color: white;
+}
+.container > div:nth-child(2) {
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 0%;
+}

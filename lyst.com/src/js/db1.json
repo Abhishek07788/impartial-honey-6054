@@ -1,0 +1,438 @@
+{
+  "HomeData1": [
+    {
+      "title": "BAGANICON",
+      "image": "https://cdna.lystit.com/cms/ea59bbea_bf2d_4441_90aa_b0a1a8ee614b_21dfec2728.png",
+      "price": 799
+    },
+    {
+      "title": "30 UNDER 300",
+      "image": "https://cdna.lystit.com/cms/2c09c3f3_34a7_4302_9a44_416fd3fa5d76_10988971ba.png",
+      "price": 799
+    },
+    {
+      "title": "TREND TO KNOW: WHITE NIGHTS",
+      "image": "https://cdna.lystit.com/cms/3c70c00c_25c6_42ef_8e12_6a5e0e5819e7_fd338f521d.png",
+      "price": 799
+    },
+    {
+      "title": "THIS IS FASHION",
+      "image": "https://cdna.lystit.com/cms/cd20a12e_e37b_4e36_8325_ed1a2b420728_b7596dca3b.png",
+      "price": 799
+    },
+    {
+      "title": "REFINED GLAMOUR",
+      "image": "https://cdna.lystit.com/cms/c10401b4_0e1c_4b30_8ebd_302ad87518f7_79739750c4.png",
+      "price": 799
+    }
+  ],
+
+  "HomeData2": [
+    {
+      "title": "SHOP BODEN UP TO 15% OFF WITH CODE F2L9",
+      "image": "https://cdna.lystit.com/cms/Boden_WW_mobile600x600_No_Logo_9f0a33ced2.jpg",
+      "price": 799
+    },
+    {
+      "title": "Shop Boden Up to 15% Off with Code F2L9",
+      "image": "https://cdna.lystit.com/cms/Top_Lyst_Aug600x600_d8c778d3df.jpg",
+      "price": 799
+    },
+    {
+      "title": "NET-A-PORTER | EXPLORE OUR ROUNDUP OF THE MOST NOTEWORTHY SHOES",
+      "image": "https://cdna.lystit.com/cms/Lyst_UK_600x600_2ae1a26508.jpg",
+      "price": 799
+    },
+    {
+      "title": "SABRINA ZENG | SUSTAINABLE DESIGNER LEATHER GOODS",
+      "image": "https://cdna.lystit.com/cms/SZ_LYST_Hammock_Camel_1_bc0dd8c317.jpg",
+      "price": 799
+    },
+    {
+      "title": "VOTED ONE OF BEST STORES IN THE WORLD VOUGEITALIA",
+      "image": "https://cdna.lystit.com/cms/madison_beverly_hills_lyst_63f59bd7db.jpg",
+      "price": 799
+    }
+  ],
+
+  "HomeData3": [
+    {
+      "title": "",
+      "image": "https://i.ibb.co/NsVSm3x/Screenshot-2022-08-25-005205.png",
+      "price": 799
+    },
+    {
+      "title": "GUCCI",
+      "image": "https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg",
+      "price": 799
+    },
+    {
+      "title": "SAINT LAURENT",
+      "image": "https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg",
+      "price": 799
+    },
+    {
+      "title": "OFF-WHITE C/O VIRGIL ABLOH",
+      "image": "https://cdna.lystit.com/cms/designer_rail_off_white_co_virgil_abloh_d8c6b37a9f.jpeg",
+      "price": 799
+    },
+    {
+      "title": "PATOU",
+      "image": "https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg",
+      "price": 799
+    },
+    {
+      "title": "BALENCIAGA",
+      "image": "https://cdna.lystit.com/cms/designer_rail_balenciaga_215cbc0fe0.jpeg",
+      "price": 799
+    },
+    {
+      "title": "NIKE",
+      "image": "https://cdna.lystit.com/cms/designer_rail_nike_c3045162ba.png",
+      "price": 799
+    },
+    {
+      "title": "DOLCE & GABBANA",
+      "image": "https://cdna.lystit.com/cms/designer_rail_dolce_gabbana_bcb7049bb0.jpeg",
+      "price": 799
+    },
+    {
+      "title": "MONCLER",
+      "image": "https://cdna.lystit.com/cms/designer_rail_moncler_bcdcdc131d.jpeg",
+      "price": 799
+    },
+    {
+      "title": "VALENTINO",
+      "image": "https://cdna.lystit.com/cms/designer_rail_valentino_421c18fab0.jpeg",
+      "price": 799
+    }
+  ],
+
+  "HomeData4": [
+    {
+      "title": "ETON SHIRTS",
+      "image": "https://cdna.lystit.com/cms/eton_sweden_shirt_da4fff6982.jpg",
+      "price": 799
+    },
+    {
+      "title": "GALVAN LONDON DRESSES",
+      "image": "https://cdna.lystit.com/cms/galvan_dress_cb31d2b319.jpg",
+      "price": 999
+    },
+    {
+      "title": "",
+      "image": "https://i.postimg.cc/QM0YZhzT/Screenshot-2022-08-25-011520.png",
+      "price": 799
+    },
+    {
+      "title": "ROBERTA ROLLER NIGHTWEAR",
+      "image": "https://cdna.lystit.com/cms/roberta_roller_rabbit_480eb63ae6.jpg",
+      "price": 799
+    },
+    {
+      "title": "RHUDE T-SHIRTS",
+      "image": "https://cdna.lystit.com/cms/rhude_shirt_c6bc886e07.jpg",
+      "price": 899
+    },
+    {
+      "title": "A BATHING APE JACKETS",
+      "image": "https://cdna.lystit.com/cms/a_bathing_ape_jacket_c40f13e02f.jpg",
+      "price": 799
+    },
+    {
+      "title": "JOHNNY SWIMWEAR OUTFITS",
+      "image": "https://cdna.lystit.com/cms/johnny_was_beachwear_812a36ae2c.jpg",
+      "price": 739
+    },
+    {
+      "title": "CASABLANCA T-SHIRTS",
+      "image": "https://cdna.lystit.com/cms/casablanca_shirt_b83fb98040.jpg",
+      "price": 799
+    }
+  ],
+
+  "HomeData5": [
+    {
+      "title": "BONOBOS SHORTS",
+      "image": "https://cdna.lystit.com/cms/bonobos_shorts_6a3e83ea91.jpg",
+      "price": 799
+    },
+    {
+      "title": "",
+      "image": "https://i.postimg.cc/DwZP4Hyr/Screenshot-2022-08-25-012455.png",
+      "price": 799
+    },
+    {
+      "title": "BALENCIAGA BEACHWEAR AND SWIMWEAR OUTFITS",
+      "image": "https://cdna.lystit.com/cms/balenciaga_swimwear_a06622c701.jpg",
+      "price": 799
+    },
+    {
+      "title": "PANDORA BRACELETS",
+      "image": "https://cdna.lystit.com/cms/pandora_bracelets_1e97a9f038.jpg",
+      "price": 799
+    },
+    {
+      "title": "LANVIN T-SHIRTS",
+      "image": "https://cdna.lystit.com/cms/lanvin_shirt_8ae9c5a0a3.jpg",
+      "price": 799
+    },
+    {
+      "title": "MAISON MIHARA YASUHIRO SNEAKERS",
+      "image": "https://cdna.lystit.com/cms/maison_mihara_shoes_4f566934fb.jpg",
+      "price": 799
+    },
+    {
+      "title": "CHIMI SUNGLASSES",
+      "image": "https://cdna.lystit.com/cms/chimi_sunglasses_1629b146e4.jpg",
+      "price": 799
+    },
+    {
+      "title": "BONOBOS PANTS, SLACKS AND CHINOS",
+      "image": "https://cdna.lystit.com/cms/bonobos_pants_ff66673693.jpg",
+      "price": 799
+    }
+  ],
+  "mens": [
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/t-shirt/o/s/5/m-hy-combo-grey-black-m-hydey-original-imagy9ayxvqufsqs-bb.jpeg?q=50",
+      "Brand": "HYDEY",
+      "title": "Pack of 2 Color Block Men Hooded Neck Red, Black, Grey ...",
+      "price": 629,
+      "olderprice": 1998,
+      "id": 1
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/t-shirt/a/z/i/m-skull-texas-fit-nerroo-original-imageefbrsdzwzbe-bb.jpeg?q=50",
+      "Brand": "Nerroo",
+      "title": "Printed Men Round Neck Grey T-Shirt",
+      "price": 499,
+      "olderprice": 799,
+      "id": 2
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/t-shirt/a/j/x/m-kf-002-thrill-fashion-original-imafvdeaeq3yuddv-bb.jpeg?q=50",
+      "Brand": "CHIRKUT",
+      "title": "Striped Men Hooded Neck Red T-Shirt",
+      "price": 315,
+      "olderprice": 999,
+      "id": 3
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/t-shirt/e/q/9/xl-af-2503-white-azf-original-imagggzugspf4dx3.jpeg?q=50",
+      "Brand": "AZF",
+      "title": "Striped Men Hooded Neck White, Black T-Shirt",
+      "price": 399,
+      "olderprice": 799,
+      "id": 4
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/t-shirt/h/q/h/xxl-af-2503-mustard-azf-original-imagggzunhqypqtw.jpeg?q=50",
+      "Brand": "AZF",
+      "title": "Color Block Men Round Neck Orange T-Shirt",
+      "price": 399,
+      "olderprice": 799,
+      "id": 5
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/ku5ufm80/t-shirt/k/r/a/l-sl0010-maroon-slowloris-original-imag7cjq58zrsssv.jpeg?q=50",
+      "Brand": "SlowLoris",
+      "title": "Solid Men Round Neck Maroon T-Shirt",
+      "price": 349,
+      "olderprice": 1299,
+      "id": 6
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/k09vv680/t-shirt/g/e/u/m-skull-texas-fit-nerroo-original-imafkybyzvvaspf4.jpeg?q=50",
+      "Brand": "Nerroo",
+      "title": "Printed Men Round Neck Black T-Shirt",
+      "price": 499,
+      "olderprice": 799,
+      "id": 7
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/l4oi4cw0/t-shirt/q/7/u/xxl-fbomb-fambruh-original-imagfg6zzybmbtyf.jpeg?q=50",
+      "Brand": "FAMBRUH",
+      "title": "Pack of 2 Solid Men Round Neck Black T-Shirt",
+      "price": 426,
+      "olderprice": 799,
+      "id": 8
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/l4oi4cw0/t-shirt/u/9/e/xl-fbomb-fambruh-original-imagfg6z6e7gkygs.jpeg?q=50",
+      "Brand": "FAMBRUH",
+      "title": "Pack of 2 Solid Men Round Neck Black T-Shirt",
+      "price": 426,
+      "olderprice": 799,
+      "id": 9
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/580/696/l3dcl8w0/t-shirt/e/2/m/xl-fbomb-fambruh-original-imageghx5nufs87k.jpeg?q=50",
+      "Brand": "FAMBRUH",
+      "title": "Solid Men Round Neck Blue T-Shirt",
+      "price": 474,
+      "olderprice": 899,
+      "id": 10
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kqgyhe80/shirt/e/7/k/m-men-slim-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imag4h5nphqhwh9h.jpeg?q=50",
+      "Brand": "Lizzy",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 469,
+      "olderprice": 999,
+      "id": 11
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kz4gh3k0/shirt/j/b/9/s-men-regular-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imagb7h543g5htsx.jpeg?q=50",
+      "Brand": "JUHIL BAZAR",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 440,
+      "olderprice": 1299,
+      "id": 12
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/l3es13k0/shirt/y/k/g/xl-latest-zara-ramraj-human-being-unique-stylish-high-quality-3-original-imagegp6zdngyf9e.jpeg?q=50",
+      "Brand": "Indi Hemp",
+      "title": "Men Slim Fit Solid Cut Away Collar Casual Shirt",
+      "price": 500,
+      "olderprice": 1999,
+      "id": 13
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kz4gh3k0/shirt/q/b/d/s-men-regular-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imagb7h5ex3v8jht.jpeg?q=50",
+      "Brand": "Lizzy",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 469,
+      "olderprice": 1299,
+      "id": 14
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/shirt/y/m/r/m-men-regular-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imagb7h5dthbengd-bb.jpeg?q=50",
+      "Brand": "Heeva",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 469,
+      "olderprice": 1299,
+      "id": 15
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kxgfzbk0/shirt/q/h/g/xl-nemhs002-nem-original-imag9wqgukefu4mk.jpeg?q=50",
+      "Brand": "NEM",
+      "title": "Men Slim Fit Solid Slim Collar Casual Shirt",
+      "price": 499,
+      "olderprice": 1599,
+      "id": 16
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kz4gh3k0/shirt/o/h/d/l-men-regular-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imagb7h4etnukeer.jpeg?q=50",
+      "Brand": "Sadvidhya",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 475,
+      "olderprice": 1299,
+      "id": 17
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kz4gh3k0/shirt/n/5/j/xxl-men-regular-fit-solid-mandarin-collar-casual-shirt-juhil-original-imagb7h4zu86gek6.jpeg?q=50",
+      "Brand": "Lizzy",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 469,
+      "olderprice": 1299,
+      "id": 18
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/shirt/m/u/d/l-men-slim-fit-solid-mandarin-collar-casual-shirt-juhil-bazar-original-imag4h5ndfrjx8cu-bb.jpeg?q=50",
+      "Brand": "Paul Jordan",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 465,
+      "olderprice": 1299,
+      "id": 19
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kt8zb0w0/shirt/u/h/d/m-men-slim-fit-solid-mandarin-collar-casual-shirt-lizzy-original-imag6n4qwyhjyqn6.jpeg?q=50",
+      "Brand": "Heeva",
+      "title": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+      "price": 469,
+      "olderprice": 1299,
+      "id": 20
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/t-shirt/7/h/y/xxl-4173-4175-fastcolors-original-imafvexekxgbh7mh-bb.jpeg?q=50",
+      "Brand": "FastColors",
+      "title": "Solid Men Round Neck Black, Yellow T-Shirt",
+      "price": 500,
+      "olderprice": 1999,
+      "id": 21
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/t-shirt/z/4/h/xl-fas3orgwhtnvy-fascista-original-imafuz5wxswjr5re-bb.jpeg?q=50",
+      "Brand": "Fascista",
+      "title": "Color Block Men Round Neck Orange T-Shirt",
+      "price": 249,
+      "olderprice": 1999,
+      "id": 22
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/k58hwnk0/t-shirt/n/g/h/l-u11-farbot-original-imafnyzpywwhhzyn.jpeg?q=50",
+      "Brand": "FARBOT",
+      "title": "Solid Men Round Neck White T-Shirt",
+      "price": 249,
+      "olderprice": 999,
+      "id": 23
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/ktrk13k0/t-shirt/c/j/o/m-lrkccslf483564-louis-philippe-jeans-original-imag7f45qkkftgxf.jpeg?q=50",
+      "Brand": "Louis Philippe Jeans",
+      "title": "Solid Men Round Neck Yellow T-Shirt",
+      "price": 779,
+      "olderprice": 1299,
+      "id": 24
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/khz693k0-0/t-shirt/z/i/w/m-pm507628-pepe-jeans-original-imafxv5qrtbdgzeq.jpeg?q=50",
+      "Brand": "Pepe Jeans",
+      "title": "Color Block Men Round Neck Orange T-Shirt",
+      "price": 720,
+      "olderprice": 1599,
+      "id": 25
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/l0igvww0/t-shirt/y/m/6/m-k10k108445yaf-calvin-klein-jeans-original-imagca332gt5sbhk.jpeg?q=50",
+      "Brand": "Calvin Klein Jeans",
+      "title": "Printed Men Round Neck White T-Shirt",
+      "price": 3199,
+      "olderprice": 3999,
+      "id": 26
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/t-shirt/f/k/y/-original-imaggms7u9ratvmt.jpeg?q=50",
+      "Brand": "Pepe Jeans",
+      "title": "Printed Men Round Neck Maroon T-Shirt",
+      "price": 1049,
+      "olderprice": 1599,
+      "id": 27
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/kv8fbm80/t-shirt/6/l/n/m-jts13-m-rewaa-original-imag86667dk2zazp.jpeg?q=50",
+      "Brand": "VEDUU",
+      "title": "Printed Men Round Neck Pink T-Shirt",
+      "price": 499,
+      "olderprice": 899,
+      "id": 28
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/k58hwnk0/t-shirt/f/f/y/s-u51-farbot-original-imafnyzpkurtmupt.jpeg?q=50",
+      "Brand": "FARBOT",
+      "title": "Solid Men Round Neck Green T-Shirt",
+      "price": 249,
+      "olderprice": 999,
+      "id": 29
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/577/692/xif0q/t-shirt/i/y/a/l-hx001-farbot-original-imagh9brfuvhq87r.jpeg?q=50",
+      "Brand": "FARBOT",
+      "title": "Solid Men Hooded Neck White T-Shirt",
+      "price": 304,
+      "olderprice": 1399,
+      "id": 30
+    }
+  ]
+}
