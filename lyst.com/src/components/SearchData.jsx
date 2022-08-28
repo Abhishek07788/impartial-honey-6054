@@ -3,23 +3,13 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Allproduct } from "../Api/Allapi";
 
-import {
-  SimpleGrid,
-  Text,
-  Box,
-  Button,
-  Image,
-  Link,
-  InputLeftElement,
-  Input,
-  InputGroup,
-} from "@chakra-ui/react";
-import { AttachmentIcon, SearchIcon } from "@chakra-ui/icons";
+import { SimpleGrid, Text, Box, Button, Image, Link } from "@chakra-ui/react";
+import { AttachmentIcon } from "@chakra-ui/icons";
 import "../css/mens.css";
 import Bottom from "../Navbar/Bottom";
 import { ModalComponent } from "./Modal";
 import { AiOutlineHeart } from "react-icons/ai";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import Navbar, { AppContext } from "../Navbar/Navbar";
 
@@ -30,9 +20,7 @@ const localData = () => {
 const SearchData = () => {
   const name = useContext(AppContext);
   const navigate = useNavigate();
-  const [searchInput, setSearchInput] = useSearchParams();
-  const intialInput = searchInput.get("search") || "";
-  const [input, setInput] = useState(intialInput);
+  const [input, setInput] = useState(name);
   const [data1, setData1] = useState([]);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedBox, setSelectedBox] = useState({});
@@ -40,27 +28,12 @@ const SearchData = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  //---------------------------modal---------------------
   const handleClick = (item) => {
     setIsModalVisible(true);
     setSelectedBox(item);
-    localStorage.setItem("details", JSON.stringify(item));
+    localStorage.setItem("details", JSON.stringify(item))
   };
   // console.log("input",input)
-  useEffect(()=>{
-    setInput(name);
-  },[name])
-
-  //---------------Search Input---------------------------
-  const getInput = (e) => {
-    if (e.key === "Enter") {
-      setInput(e.target.value);
-      //console.log(e.target.value)
-    }
-  };
-
-  //------------------------------fetch data--------------
-
   useEffect(() => {
     Allproduct(input || "mens")
       .then((res) => {
@@ -73,13 +46,7 @@ const SearchData = () => {
         setLoading(false);
         setError(true);
       });
-  }, [input]);
-//------------param---------------------
-useEffect(()=>{
-  setSearchInput({input})
-},[input])
-
-  //-----------------loding--------------------
+  }, [name]);
 
   if (loading) {
     return (
@@ -103,7 +70,6 @@ useEffect(()=>{
     );
   }
 
-  //---------------------error-------------------
   if (error) {
     return (
       <>
@@ -126,37 +92,11 @@ useEffect(()=>{
     // console.log("item: ", item);
   };
 
-  //-----------------------------add to cart-----------------------
-  localStorage.setItem("mensData", JSON.stringify(spraid));
+    localStorage.setItem("mensData", JSON.stringify(spraid));
 
-  //--------------------return dom------------------------
 
   return (
     <div>
-      <InputGroup
-        pos={"fixed"}
-        zIndex={2000}
-        // bg={"white"}
-        top={0}
-        ml={[242, 242, 321, 352]}
-        mt={"74px"}
-      >
-        <InputLeftElement
-          pointerEvents="none"
-          children={<SearchIcon color="gray.300" />}
-        />
-        <Input
-          type={"search"}
-          w={[140, 300, "372px", "71%"]}
-          bg={"white"}
-          isInvalid
-          errorBorderColor="black"
-          placeholder="SEARCH (EG. ACNE JEANS)"
-          // onChange={(e)=> setInput(e.target.value)}
-          onKeyDown={(e) => getInput(e)}
-        />
-      </InputGroup>
-      <AiOutlineHeart onClick={() => navigate("/cart")} className="unitHeart" />
       <SimpleGrid top="0" mt={140} w={"100%"} columns={1} spacing={10}>
         <Box bg="#f5f4f2" borderBottom={"1px solid black"}>
           <Text

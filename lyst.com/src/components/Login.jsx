@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Input, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Input, SimpleGrid, Text } from "@chakra-ui/react";
 import Bottom from "../Navbar/Bottom";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
@@ -52,6 +52,7 @@ const Login = () => {
       <Box mt={140} padding="6" fontSize={30} fontWeight="600">
         Log In
       </Box>
+        <SimpleGrid columns={[1,1,2,2]}>
       <SimpleGrid
         textAlign={"left"}
         m="auto"
@@ -198,6 +199,10 @@ const Login = () => {
             Privacy Policy.
           </a>
         </Text>
+      </SimpleGrid>
+      <Box m="auto" mt={10}>
+        <Image src="https://www.digitalfire.co.za/wp-content/uploads/2015/03/shopbop-1.gif" alt="fgoj" />
+      </Box>
       </SimpleGrid>
       <Bottom />
     </div>

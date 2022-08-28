@@ -7,6 +7,7 @@ import Home from "../components/Home";
 import Login from "../components/Login";
 import Mens from "../components/Mens";
 import Payment from "../components/Payment";
+import PaymentMethode from "../components/PaymentMethode";
 import SearchData from "../components/SearchData";
 import Womens from "../components/Womens";
 import PrivateRoutes from "./PrivateRoutes";
@@ -40,6 +41,14 @@ const Allroutes = () => {
         element={
           <PrivateRoutes>
             <Payment />
+          </PrivateRoutes>
+        }
+      ></Route>
+       <Route
+        path="/paymentmethod"
+        element={
+          <PrivateRoutes>
+            <PaymentMethode/>
           </PrivateRoutes>
         }
       ></Route>
