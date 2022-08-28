@@ -81,6 +81,9 @@ const SearchData = () => {
         <h1 style={{ marginBottom: "100px", fontSize: "30px" }}>
           Api Server Error...
         </h1>
+        <Button onClick={()=> navigate(-1)} colorScheme="teal" size="lg">
+          Go Back 
+        </Button>
       </>
     );
   }

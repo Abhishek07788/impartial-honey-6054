@@ -61,16 +61,19 @@ if(ordered){
           <Box>
             <Text fontSize={18}>Select your payment method</Text>
             
+            <a href="https://www.paypal.com/in/home">
             <Button mt={"50px"} border="1px" w="90%" p="8">
             <BsPaypal 
             className="debit"
             /> PayPal
-            </Button>
+            </Button></a>
+
+            <a href="https://www.paypal.com/in/home">
             <Button mt={7} mb="100" border="1px" w="90%" p="8">
             <BsFillCreditCard2FrontFill
             className="debit"
             /> Debit or credit card
-            </Button>
+            </Button></a>
               
           
           

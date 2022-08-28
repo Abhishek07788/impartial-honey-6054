@@ -22,6 +22,7 @@ const Cart = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedBox, setSelectedBox] = useState({});
   const [total, setTotal] = useState()
+  const [temp, setTemp] = useState(0)
 
   //-----------modal----------------
   const handleClick = (item) => {
@@ -37,10 +38,15 @@ const Cart = () => {
       setTotal(0)
     }
     setData1(local());
+  },[temp]);
+
+  useEffect(()=>{
     totalPrice();
-  }, [local()]);
+  },[local()])
+  
 
   const remove = (item) => {
+    setTemp(temp+1)
     data1.splice(item, 1);
     localStorage.setItem("mensData", JSON.stringify(data1));
     // window.location.reload();

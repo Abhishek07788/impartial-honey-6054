@@ -27,7 +27,7 @@ const Payment = () => {
         <Heading color={"black"}>ADD DELIVERY ADDRESS</Heading>
       </Box>
       <SimpleGrid w="85%" m="auto" textAlign={"left"} mt="10" columns={[1,1,2,2]}>
-        <Box>
+        <Box mb="100px"  borderBottom={"1px"} padding="10" borderRadius={10}>
           <Text fontSize={18}>* Required fields</Text>
           <Text mt={7}>First Name *</Text>
           <Input mt={2} placeholder="" />
@@ -65,7 +65,7 @@ const Payment = () => {
           <Text
             textDecoration={"underline"}
             mt={5}
-            mb={20}
+            mb={0}
           >
             Cancle
           </Text>
