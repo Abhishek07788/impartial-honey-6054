@@ -7,10 +7,14 @@ import Allroutes from './router/Allroutes';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Allroutes />
     </div>
   );
 }
 
 export default App;
+
+
+// email: "eve.holt@reqres.in",
+// password: "cityslicka",

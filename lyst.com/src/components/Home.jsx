@@ -12,6 +12,7 @@ import {
 import HomeData from "../js/db1";
 import { useState } from "react";
 import Bottom from "../Navbar/Bottom";
+import { ModalComponent } from "./Modal";
 //console.log("HomeData: ", HomeData1);
 
 const Home = () => {
@@ -22,7 +23,19 @@ const Home = () => {
   const [data5, setData5] = useState(HomeData.HomeData5);
   const [data6, setData6] = useState(HomeData.mens);
 
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedBox, setSelectedBox] = useState({});
+
+  const handleClick = (item) => {
+    setIsModalVisible(true);
+    setSelectedBox(item);
+    localStorage.setItem("details", JSON.stringify(item))
+  };
+
+
   return (
+    <>
+    
     <div className="home">
       <Image
         m="auto"
@@ -35,7 +48,7 @@ const Home = () => {
       <div className="Homefirstrow">
         <div>
           {data1.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
               <div>
                 <img src={item.image} alt={item.title} />
@@ -47,7 +60,7 @@ const Home = () => {
       <div style={{ marginTop: "0px" }} className="Homefirstrow">
         <div>
           {data2.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
               <div>
                 <img src={item.image} alt={item.title} />
@@ -59,7 +72,7 @@ const Home = () => {
       <div className="Homefirstrow3">
         <div>
           {data3.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
 
               <img src={item.image} alt={item.title} />
@@ -70,7 +83,7 @@ const Home = () => {
       <div style={{ marginTop: "0px" }} className="Homefirstrow4">
         <div>
           {data4.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
 
               <img src={item.image} alt={item.title} />
@@ -81,7 +94,7 @@ const Home = () => {
       <div style={{ marginTop: "0px" }} className="Homefirstrow4">
         <div>
           {data5.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
 
               <img src={item.image} alt={item.title} />
@@ -92,7 +105,7 @@ const Home = () => {
       <div style={{ marginTop: "0px" }} className="Homefirstrow4">
         <div>
           {data6.map((item) => (
-            <div>
+            <div onClick={() => handleClick(item)}>
               <h2>{item.title}</h2>
 
               <img src={item.image} alt={item.title} />
@@ -371,9 +384,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ModalComponent
+          data={selectedBox}
+          isOpen={isModalVisible}
+          setIsOpen={setIsModalVisible}
+        />
         {/*----------------- Bottom-------------- */}
         <Bottom />
     </div>
+    </>
   );
 };
 

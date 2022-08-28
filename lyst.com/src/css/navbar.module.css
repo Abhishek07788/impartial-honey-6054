@@ -11,9 +11,17 @@
     color: teal;
 }
 .default {
-  color: red;
   border-bottom: 1px black;
   font-size: 20px;
   padding: 1rem;
   text-decoration: underline;
+}
+.cart{
+  padding: 0px;
+  margin: 0px;
+  font-size: 40px;
+}
+.cart:hover{
+  cursor: pointer;
+  color: red;
 }

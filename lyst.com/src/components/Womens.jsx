@@ -8,22 +8,48 @@ import {
   Image,
   Button,
 } from "@chakra-ui/react";
-import React from "react";
+import { AttachmentIcon } from "@chakra-ui/icons";
+
+import React, { useEffect } from "react";
 import "../css/mens.css";
 import Bottom from "../Navbar/Bottom";
 import womendata from "../js/db2.json";
 import { useState } from "react";
 import { DescModal, ModalComponent } from "./Modal";
+import { AiOutlineHeart } from "react-icons/ai";
+
+//console.log('mendata: ', mendata);
+const getLocalItem = () =>{
+  return JSON.parse(localStorage.getItem("mensData")) || [];
+
+}
+
 
 const Womens = () => {
   const [data1, setData1] = useState(womendata.womensData);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedBox, setSelectedBox] = useState({});
+  const [spraid, setSpraid] = useState(getLocalItem());
 
   const handleClick = (item) => {
     setIsModalVisible(true);
     setSelectedBox(item);
+    localStorage.setItem("details", JSON.stringify(item))
   };
+
+
+  const addtoCart = (item) => {
+    setSpraid([...spraid, item]);
+    alert("Item Added.!");
+
+    // console.log("item: ", item);
+  };
+  useEffect(()=>{
+
+    localStorage.setItem("mensData", JSON.stringify(spraid));
+  },[spraid])
+
+
 
 
   return (
@@ -117,26 +143,63 @@ const Womens = () => {
         </div>
       </div>
       <div className="right">
-        <SimpleGrid columns={[1, 2, 3, 4]} padding={"10px"} spacing="0px">
+        <SimpleGrid columns={[1, 2, 3, 4]} padding={"10px"} spacing="1px">
           {data1.map((el, index) => (
             <Box
               key={index}
               border={"1px solid rgb(169, 166, 166)"}
               bg="white"
-              height=""
-              fontWeight={450}
-              textAlign={"center"}
+              height={["340px", "400px", "500px", "400px"]}
+              fontWeight={470}
               _hover={{
-                width: "102%",
                 cursor: "pointer",
+                boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
               }}
             >
-              <Image w={"100%"} src={el.image} alt={el.title} />
-              <Text width={"90%"} m={"auto"}>
+              <Image
+                h={["40%", "50%", "60%", "60%"]}
+                w={"100%"}
+                src={el.image}
+                alt={el.title}
+              />
+              <Text textAlign={"left"} ml={4} width={"90%"} m={"auto"} mt={5}>
                 {el.title}
               </Text>
-              <Text>Rs.{el.price}</Text>
-              <Button colorScheme='teal' size='xs' onClick={() => handleClick(el)}>View Details</Button>
+              <Text fontWeight={500} textAlign={"left"} ml={4}>
+                Rs.{el.price}
+                <AiOutlineHeart
+                  className="heart"
+                  onClick={() => addtoCart(el)}
+                  style={{
+                    fontSize: "30",
+                    float: "right",
+                    marginRight: "16",
+                    marginTop: "30px",
+                  }}
+                />
+              </Text>
+
+              <Text
+                textAlign={"left"}
+                ml={4}
+                position="absolute"
+                fontWeight={400}
+              >
+                <AttachmentIcon /> Free People
+              </Text>
+              <br />
+              <Button
+                colorScheme={"green"}
+                bg="#202020"
+                color="white"
+                mt={4}
+                float="left"
+                ml={4}
+                size="xs"
+                onClick={() => handleClick(el)}
+              >
+                View Details
+              </Button>
             </Box>
           ))}
         </SimpleGrid>
@@ -145,7 +208,6 @@ const Womens = () => {
           isOpen={isModalVisible}
           setIsOpen={setIsModalVisible}
         />
-        <Bottom />
         {/*----------------- Bottom-------------- */}
         <Bottom />
       </div>
