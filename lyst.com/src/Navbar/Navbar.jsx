@@ -216,7 +216,7 @@ const Navbar = ({ children }) => {
             </SimpleGrid>
           </Box>
         </Box>
-        <Box h="40px" w={"30%"} float="right">
+        <Box h="40px" w={"80%"} float="right">
           {isAuth ? (
             <Text
               float={"right"}
