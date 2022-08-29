@@ -12,27 +12,30 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { useState } from "react";
-import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import Details from "./Details";
+
+
 
 export function ModalComponent({ isOpen, setIsOpen, data }) {
   const navigate = useNavigate();
 
-
+//-----------redirect details page----------
   const Deatils = () => {
     navigate("/details");
   };
   
 
+  //---------------close modal---------------
 
   const onClose = () => {
     setIsOpen(false);
   };
 
+
+  //----------------dom-----------------------
   //console.log(data);
   return (
     <>
@@ -43,7 +46,7 @@ export function ModalComponent({ isOpen, setIsOpen, data }) {
         onClose={onClose}
       >
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent w={["80%","80%","100%","100%"]} m={["auto"]} mt={["20","10","auto","auto"]}>
           <ModalHeader>
             <Breadcrumb>
               <BreadcrumbItem>
@@ -53,17 +56,20 @@ export function ModalComponent({ isOpen, setIsOpen, data }) {
             {data.title}
           </ModalHeader>
           <ModalCloseButton />
-          <ModalBody display={"flex"} gap="20">
+          <ModalBody>
+           <SimpleGrid m="auto"  columns={[1,1,2,2]} gap="20">
+            <Box>
             <Image
+              m="auto"
               border={"1px solid"}
               borderRadius={10}
-              ml={10}
-              h={400}
-              w={"40%"}
+              h={[200,200,400,400]}
+              w={["80%","80%","90%","90%"]}
               src={data.image}
               alt="image"
             />
-            <Box>
+            </Box>
+            <Box m={["auto"]}>
               <Text fontWeight={"bold"} fontSize={25}>
                 Free People
               </Text>
@@ -92,6 +98,7 @@ export function ModalComponent({ isOpen, setIsOpen, data }) {
                 Product Details
               </Text>
             </Box>
+            </SimpleGrid>
           </ModalBody>
 
           <ModalFooter></ModalFooter>

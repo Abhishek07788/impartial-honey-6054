@@ -6,6 +6,7 @@ import {
   InputLeftElement,
   Input,
   Button,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import React from "react";
@@ -72,21 +73,33 @@ const Navbar = ({ children }) => {
             />
           </Link>
           <Box display="flex" float="right" padding={0} gap="10px">
-            <Text mt={-2} fontSize="lg">
+            <Text
+              mt={-2}
+              display={["none", "none", "block", "block"]}
+              fontSize="lg"
+            >
               IN-USS
             </Text>
-            <Text mt={-2} fontSize="lg">
+            <Text
+              mt={-2}
+              fontSize="lg"
+              display={["none", "none", "block", "block"]}
+            >
               Help
             </Text>
-            {isAuth ? (
-              <Text>
-                <BsFillPersonFill />
-                {email}
-              </Text>
-            ) : (
-              ""
-            )}
-            <button onClick={() => navigate("/login")} className="butt1">
+            <Button
+              pt={["0px", "0px", "0px", "0px"]}
+              fontSize={["12px", "12px", "16px", "16px"]}
+              w={["110px", "110px", "150px", "150px"]}
+              h={["25px", "25px", "35px", "35px"]}
+              color="white"
+              bg="black"
+              _hover={{
+                bg: "grey",
+              }}
+              onClick={() => navigate("/login")}
+              className="butt1"
+            >
               {isAuth ? (
                 <>
                   <button style={{ marginBottom: "0px" }} onClick={logOutUser}>
@@ -96,7 +109,7 @@ const Navbar = ({ children }) => {
               ) : (
                 `Sing up or Log in`
               )}
-            </button>
+            </Button>
           </Box>
         </Box>
         <Box
@@ -111,9 +124,9 @@ const Navbar = ({ children }) => {
           <Box display="flex" gap={30} alignItems="center">
             <Link to="/">
               <Image
-                h={[4, 8, 10, 10]}
+                h={[0, 0, 10, 10]}
                 ml={[0, 0, 0, 0]}
-                w={["60px", "80px", 160, 160]}
+                w={["0px", "80px", 160, 160]}
                 display={["none", "none", "block", "block"]}
                 src="https://i.postimg.cc/TPBz6N0w/Screenshot-2022-08-24-164137.png"
                 alt="Dan Abramov"
@@ -128,23 +141,28 @@ const Navbar = ({ children }) => {
                 to={elem.path}
               >
                 <Text
+                  display={["none", "none", "block", "block"]}
                   mt={0}
-                  ml={[-30, -10, null, null]}
-                  mr={[-35, -10, null, null]}
-                  fontSize={["14px", "lg", "lg", "lg"]}
+                  ml={"-30px"}
+                  mr={"-30px"}
+                  fontSize={["0px", "0px", "lg", "lg"]}
                 >
                   {elem.title}
                 </Text>
               </NavLink>
             ))}
-            <InputGroup>
+            <InputGroup
+              position={["absolute", "absolute", "relative", "relative"]}
+            >
               <InputLeftElement
                 pointerEvents="none"
                 children={<SearchIcon color="gray.300" />}
               />
               <Input
                 type={"search"}
-                w={[140, 300, "100%", "100%"]}
+                w={["70%", "70%", "100%", "100%"]}
+                h={["30px","30px","40px","40px"]}
+                fontSize={["13px","13px","16px","16px"]}
                 isInvalid
                 errorBorderColor="black"
                 placeholder="SEARCH (EG. ACNE JEANS)"
@@ -152,10 +170,61 @@ const Navbar = ({ children }) => {
                 onKeyDown={(e) => handleKye(e)}
               />
             </InputGroup>
-            <Link to="/cart">
-              <AiOutlineHeart className={styles.cart} />
-            </Link>
+            <Box
+              mr={["-0px", "0px", "-200px", "-200px"]}
+              ml={["170px", "170px", "10px", "10px"]}
+            >
+              <Link to="/cart">
+                <AiOutlineHeart className={styles.cart} />
+              </Link>
+            </Box>
           </Box>
+          <Box display={["block", "block", "none", "none"]}>
+            <SimpleGrid
+              columns={4}
+              m={"auto"}
+              textAlign={"center"}
+              w={"95%"}
+              ml={"2px"}
+              h="30px"
+            >
+              {link.map((elem) => (
+                <NavLink
+                  className={({ isActive }) =>
+                    !isActive ? styles.iactive : styles.idefault
+                  }
+                  key={elem.path}
+                  to={elem.path}
+                >
+                  <Text mt={"2px"} w={"66px"} fontSize="16px">
+                    {elem.title}
+                  </Text>
+                </NavLink>
+              ))}
+              <Text mt={"2px"} fontSize="16px">
+                IN-USS
+              </Text>
+              <Text mt={"2px"} fontSize="16px">
+                HELP
+              </Text>
+            </SimpleGrid>
+          </Box>
+        </Box>
+        <Box h="40px" w={"30%"} float="right">
+          {isAuth ? (
+            <Text
+              float={"right"}
+              pr="10px"
+              pl="10px"
+              bg={"white"}
+              borderRadius="10px"
+            >
+              <BsFillPersonFill />
+              {email}
+            </Text>
+          ) : (
+            ""
+          )}
         </Box>
       </div>
     </>

@@ -16,6 +16,22 @@
   padding: 1rem;
   text-decoration: underline;
 }
+.iactive {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.iactive:hover {
+    color: teal;
+}
+.idefault:hover {
+    color: teal;
+}
+.idefault {
+  border-bottom: 1px black;
+  font-size: 20px;
+  text-decoration: underline;
+}
 .cart{
   padding: 0px;
   margin: 0px;

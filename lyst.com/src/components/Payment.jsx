@@ -86,7 +86,8 @@ const Payment = () => {
         <Text mb={10} mt="-20" fontSize={30} fontWeight="600">Summary</Text>
           <Image
             margin={"auto"}
-            height={["500px","500px","360px","360px"]}
+            height={["250px","250px","360px","360px"]}
+            w={["100%","100%","100%","100%"]}
             borderRadius={5}
             src={data.image}
             alt="Image"

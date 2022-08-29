@@ -38,7 +38,8 @@ const Details = () => {
         <Box>
           <Image
             margin={"auto"}
-            height={"500px"}
+            height={["250px","250px","390px","390px"]}
+            w={["100%","100%","90%","90%"]}
             borderRadius={5}
             src={data.image}
             alt="Image"
@@ -76,9 +77,9 @@ const Details = () => {
             <Button
               mt={3}
               colorScheme={"blue"}
-              w={[100, 150, 300]}
+              w={[130, 150, 300]}
               bg="black"
-              fontSize={17}
+              fontSize={[15,15,17,17]}
               color="white"
               size="md"
               onClick={()=> navigate("/payment")}

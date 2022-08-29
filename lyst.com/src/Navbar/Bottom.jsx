@@ -4,7 +4,12 @@ import img1 from "../image/imgI.png"
 
 const Bottom = () => {
   return (
-    <div>
+    <div style={
+      {
+        borderTop:"1px solid black",
+        marginTop:"30px"
+      }
+    }>
       <SimpleGrid
         columns={[1, 1, 1, 2]}
         spacing="0px"
@@ -18,15 +23,15 @@ const Bottom = () => {
             src={img1}
             alt="img"
           />
-          <Text textAlign={"left"} mt={16} ml="100px">
+          <Text textAlign={"left"} mt={16} w={"80%"}  ml={[0,0,"100px","100px"]}>
             Learn about the Lyst app for iPhone, iPad and Android.
           </Text>
-          <Text ml="100px" textAlign={"left"}>
+          <Text ml={[0,0,"100px","100px"]} textAlign={"left"}>
             © 2022 Lyst
           </Text>
         </Box>
         <SimpleGrid columns={[1, 1, 1, 2]} gap={20}>
-          <Box bg="f5f4f2" textAlign="left" pl={50} ml={20}>
+          <Box bg="f5f4f2" textAlign="left" pl={50} ml={[0,0,20,20]}>
             <h2 style={{ fontSize: "25px", fontWeight: "600" }}>
               INTERNATIONAL
             </h2>
@@ -43,7 +48,7 @@ const Bottom = () => {
             <Text fontWeight={500} cursor="pointer" _hover={{color:"blue", textDecoration:"underline"}}>Lyst - België</Text>
             <Text fontWeight={500} cursor="pointer" _hover={{color:"blue", textDecoration:"underline"}}>Lyst - Nederland</Text>
           </Box>
-          <Box bg="f5f4f2" textAlign="left" pl={50} ml={20}>
+          <Box bg="f5f4f2" textAlign="left" pl={50} ml={[0,0,20,20]}>
             <h2 style={{ fontSize: "25px", fontWeight: "600" }}>
               Help and info
             </h2>

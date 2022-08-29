@@ -26,6 +26,8 @@ const Home = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedBox, setSelectedBox] = useState({});
 
+
+  //-------modal----------------
   const handleClick = (item) => {
     setIsModalVisible(true);
     setSelectedBox(item);
@@ -40,7 +42,7 @@ const Home = () => {
       <Image
         m="auto"
         boxSize="100%"
-        h={["500px"]}
+        h={["280px","280px","500px","500px"]}
         borderBottom="1px solid black"
         src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg"
         alt="Dan Abramov"

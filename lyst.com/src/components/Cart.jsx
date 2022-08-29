@@ -6,7 +6,6 @@ import Bottom from "../Navbar/Bottom";
 import { useState } from "react";
 import { ModalComponent } from "./Modal";
 import { AiOutlineHeart } from "react-icons/ai";
-import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -164,7 +163,7 @@ const totalPrice = () =>{
                 x
               </Text>
               <Image
-                h={["40%", "50%", "60%", "60%"]}
+                h={["50%", "50%", "60%", "60%"]}
                 w={"85%"}
                 m="auto"
                 mt={"7"}

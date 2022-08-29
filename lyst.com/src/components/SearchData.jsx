@@ -3,7 +3,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Allproduct } from "../Api/Allapi";
 
-import { SimpleGrid, Text, Box, Button, Image, Link } from "@chakra-ui/react";
+import {
+  SimpleGrid,
+  Text,
+  Box,
+  Button,
+  Image,
+  Link,
+  Heading,
+} from "@chakra-ui/react";
 import { AttachmentIcon } from "@chakra-ui/icons";
 import "../css/mens.css";
 import Bottom from "../Navbar/Bottom";
@@ -11,7 +19,7 @@ import { ModalComponent } from "./Modal";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import Navbar, { AppContext } from "../Navbar/Navbar";
+import { AppContext } from "../Navbar/Navbar";
 
 const localData = () => {
   return JSON.parse(localStorage.getItem("mensData")) || [];
@@ -28,11 +36,16 @@ const SearchData = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+
+  //---------modal-------------------------
   const handleClick = (item) => {
     setIsModalVisible(true);
     setSelectedBox(item);
-    localStorage.setItem("details", JSON.stringify(item))
+    localStorage.setItem("details", JSON.stringify(item));
   };
+
+
+  //----------------------data fetch from api-------------
   // console.log("input",input)
   useEffect(() => {
     Allproduct(input || "mens")
@@ -40,7 +53,7 @@ const SearchData = () => {
         //console.log(res);
         setData1(res);
         setError(false);
-        setLoading(false);
+       // setLoading(false);
       })
       .catch((err) => {
         setLoading(false);
@@ -48,56 +61,56 @@ const SearchData = () => {
       });
   }, [name]);
 
+
+
+  //-------------------loading indicate------------------
   if (loading) {
     return (
       <>
-        <img
-          style={{ width: "800px", margin: "auto", marginTop: "20px" }}
-          src="https://i.pinimg.com/originals/b4/4e/22/b44e229598a8bdb7f2f432f246fb0813.gif"
-          alt="Loading..."
-        />
-        <h1
-          style={{
-            marginBottom: "100px",
-            fontSize: "30px",
-            marginTop: "-150px",
-            fontWeight: "600",
-          }}
-        >
-          loading....
-        </h1>
-      </>
+      <Heading mt={200}>loading. . .</Heading>
+      <Image
+      w={["40%","40%","25%","25%"]}
+        style={{height:"50%", margin: "auto", marginTop: "20px" }}
+        src="https://thumbs.gfycat.com/YearlyBountifulCygnet.webp"
+        alt="Loading..."
+      />
+    </>
     );
   }
 
+
+  //------------------error indicate----------------------
   if (error) {
     return (
       <>
+        <Heading mt={200}>Server Error try again...</Heading>
         <img
-          style={{ width: "600px", margin: "auto", marginTop: "220px" }}
+          style={{ width: "600px", margin: "auto", marginTop: "60px" }}
           src="https://thumbs.gfycat.com/AnotherAmazingBirdofparadise-max-1mb.gif"
           alt="Loading..."
         />
-        <h1 style={{ marginBottom: "100px", fontSize: "30px" }}>
-          Api Server Error...
-        </h1>
-        <Button onClick={()=> navigate(-1)} colorScheme="teal" size="lg">
-          Go Back 
+        <br />
+        <br />
+
+        <Button onClick={() => navigate(-1)} colorScheme="teal" size="lg">
+          Go Back
         </Button>
       </>
     );
   }
 
+
+  //---------------------add to cart-----------------------
   const addtoCart = (item) => {
     setSpraid([...spraid, item]);
     alert("Item Added.!");
-
     // console.log("item: ", item);
   };
+  localStorage.setItem("mensData", JSON.stringify(spraid));
 
-    localStorage.setItem("mensData", JSON.stringify(spraid));
 
 
+  //----------------------Dom------------------------------
   return (
     <div>
       <SimpleGrid top="0" mt={140} w={"100%"} columns={1} spacing={10}>
@@ -149,7 +162,7 @@ const SearchData = () => {
               }}
             >
               <Image
-                h={["40%", "50%", "60%", "60%"]}
+                h={["50%", "50%", "60%", "60%"]}
                 w={"100%"}
                 src={el.image}
                 alt={el.title}
