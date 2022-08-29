@@ -36,14 +36,12 @@ const SearchData = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-
   //---------modal-------------------------
   const handleClick = (item) => {
     setIsModalVisible(true);
     setSelectedBox(item);
     localStorage.setItem("details", JSON.stringify(item));
   };
-
 
   //----------------------data fetch from api-------------
   // console.log("input",input)
@@ -53,7 +51,7 @@ const SearchData = () => {
         //console.log(res);
         setData1(res);
         setError(false);
-       // setLoading(false);
+        setLoading(false);
       })
       .catch((err) => {
         setLoading(false);
@@ -61,23 +59,20 @@ const SearchData = () => {
       });
   }, [name]);
 
-
-
   //-------------------loading indicate------------------
   if (loading) {
     return (
       <>
-      <Heading mt={200}>loading. . .</Heading>
-      <Image
-      w={["40%","40%","25%","25%"]}
-        style={{height:"50%", margin: "auto", marginTop: "20px" }}
-        src="https://thumbs.gfycat.com/YearlyBountifulCygnet.webp"
-        alt="Loading..."
-      />
-    </>
+        <Heading mt={200}>loading. . .</Heading>
+        <Image
+          w={["40%", "40%", "25%", "25%"]}
+          style={{ height: "50%", margin: "auto", marginTop: "20px" }}
+          src="https://thumbs.gfycat.com/YearlyBountifulCygnet.webp"
+          alt="Loading..."
+        />
+      </>
     );
   }
-
 
   //------------------error indicate----------------------
   if (error) {
@@ -99,7 +94,6 @@ const SearchData = () => {
     );
   }
 
-
   //---------------------add to cart-----------------------
   const addtoCart = (item) => {
     setSpraid([...spraid, item]);
@@ -107,8 +101,6 @@ const SearchData = () => {
     // console.log("item: ", item);
   };
   localStorage.setItem("mensData", JSON.stringify(spraid));
-
-
 
   //----------------------Dom------------------------------
   return (
