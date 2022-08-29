@@ -54,7 +54,7 @@ if(ordered){
   
     return (
       <div>
-        <Box mt={140} w="100%" p={4} color="white">
+        <Box mt={140} w="100%" p={4} pt={"42px"} color="white">
           <Heading color={"black"}>Select your payment method</Heading>
         </Box>
         <SimpleGrid w="85%" m="auto" textAlign={"left"} mt="10" columns={[1,1,2,2]}>

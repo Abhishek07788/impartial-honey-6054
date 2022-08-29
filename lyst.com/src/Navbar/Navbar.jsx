@@ -160,9 +160,9 @@ const Navbar = ({ children }) => {
               />
               <Input
                 type={"search"}
-                w={["70%", "70%", "100%", "100%"]}
-                h={["30px","30px","40px","40px"]}
-                fontSize={["13px","13px","16px","16px"]}
+                w={["85%", "85%", "100%", "100%"]}
+                h={["30px", "30px", "40px", "40px"]}
+                fontSize={["13px", "13px", "16px", "16px"]}
                 isInvalid
                 errorBorderColor="black"
                 placeholder="SEARCH (EG. ACNE JEANS)"
@@ -171,8 +171,9 @@ const Navbar = ({ children }) => {
               />
             </InputGroup>
             <Box
+              mt={["-1000px", "-1000px", "0px", "0px"]}
               mr={["-0px", "0px", "-200px", "-200px"]}
-              ml={["170px", "170px", "10px", "10px"]}
+              ml={["75px", "75px", "10px", "10px"]}
             >
               <Link to="/cart">
                 <AiOutlineHeart className={styles.cart} />
@@ -181,10 +182,10 @@ const Navbar = ({ children }) => {
           </Box>
           <Box display={["block", "block", "none", "none"]}>
             <SimpleGrid
-              columns={4}
+              columns={5}
               m={"auto"}
               textAlign={"center"}
-              w={"95%"}
+              w={"100%"}
               ml={"2px"}
               h="30px"
             >
@@ -207,6 +208,11 @@ const Navbar = ({ children }) => {
               <Text mt={"2px"} fontSize="16px">
                 HELP
               </Text>
+              <Box ml="30px">
+                <Link to="/cart">
+                  <AiOutlineHeart className={styles.hcart} />
+                </Link>
+              </Box>
             </SimpleGrid>
           </Box>
         </Box>
@@ -216,7 +222,7 @@ const Navbar = ({ children }) => {
               float={"right"}
               pr="10px"
               pl="10px"
-              bg={"white"}
+              bg={"#dfe8f9"}
               borderRadius="10px"
             >
               <BsFillPersonFill />

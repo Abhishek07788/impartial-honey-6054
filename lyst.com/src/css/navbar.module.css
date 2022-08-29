@@ -41,3 +41,12 @@
   cursor: pointer;
   color: red;
 }
+.hcart{
+  padding: 0px;
+  margin: 0px;
+  font-size: 33px;
+}
+.hcart:hover{
+  cursor: pointer;
+  color: red;
+}

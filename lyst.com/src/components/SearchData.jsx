@@ -9,7 +9,6 @@ import {
   Box,
   Button,
   Image,
-  Link,
   Heading,
 } from "@chakra-ui/react";
 import { AttachmentIcon } from "@chakra-ui/icons";
@@ -113,6 +112,7 @@ const SearchData = () => {
             bg={"#f5f4f2"}
             textAlign={"left"}
             p={5}
+            pt={10}
           >
             All Products
           </Text>

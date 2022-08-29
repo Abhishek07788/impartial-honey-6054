@@ -73,7 +73,7 @@ const totalPrice = () =>{
         <Box bg="white">
           <Text
             fontSize="3xl"
-            ml={["85px"]}
+            ml={["20px","20px","85px","85px"]}
             textAlign={"left"}
             mt={10}
             w={"80%"}
@@ -81,7 +81,7 @@ const totalPrice = () =>{
           >
             Saved items
           </Text>
-          <Text w={"100%"} ml={["85px"]} textAlign={"left"} mb={7} fontSize={17}>
+          <Text w={"100%"} ml={["20px","20px","85px","85px"]} textAlign={"left"} mb={7} fontSize={17}>
             Create your wishlist from across 12,000 stores in one place. We'll
             send you an alert when your favorite products go on sale or come
             back in stock.
@@ -110,7 +110,7 @@ const totalPrice = () =>{
               onClick={() => navigate(-1)}
               m={"auto"}
               mt={10}
-              w={[140, 170, 280]}
+              w={[175, 225, 280]}
               bg="white"
               fontSize={18}
               color="black"
@@ -219,12 +219,12 @@ const totalPrice = () =>{
             </Box>
           ))}
         </SimpleGrid>
-        {/*----------------- Bottom-------------- */}
         <ModalComponent
           data={selectedBox}
           isOpen={isModalVisible}
           setIsOpen={setIsModalVisible}
-        />
+          />
+          {/*----------------- Bottom-------------- */}
         <Bottom />
       </div>
     </div>
@@ -233,10 +233,3 @@ const totalPrice = () =>{
 
 export default Cart;
 
-//   return (
-//     <div>
-
-//   );
-// };
-
-// export default Cart;

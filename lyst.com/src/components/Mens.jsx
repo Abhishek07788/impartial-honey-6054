@@ -67,6 +67,7 @@ const Mens = () => {
             bg={"#f5f4f2"}
             textAlign={"left"}
             p={7}
+            pt={10}
           >
             CLOTHING FOR MEN
           </Text>
